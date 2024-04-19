@@ -9,9 +9,10 @@ app-template:
           env:
             LOG_CONFS: false
             PEERS: |
-              KDDesktop
-              KDLaptop
-              KDPhone
+              UserDevice
+              FooPhone
+              FooLaptop
+              BarDesktop
           securityContext:
             capabilities:
               add:
