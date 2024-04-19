@@ -26,3 +26,16 @@ variable "extra_secrets" {
   sensitive   = true
   default     = {}
 }
+
+
+variable "hcp_client_id" {
+  type        = string
+  description = "vault-secret client id"
+  default     = ""
+}
+
+variable "hcp_client_secret" {
+  type        = string
+  description = "vault client secret id"
+  default     = ""
+}
