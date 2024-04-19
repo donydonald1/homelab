@@ -3,7 +3,7 @@ terraform {
 
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "homelab-external"
+    organization = "Techsecom"
 
     workspaces {
       name = "homelab-external"
@@ -24,6 +24,10 @@ terraform {
     http = {
       source  = "hashicorp/http"
       version = "~> 3.4.0"
+    }
+    hcp = {
+      source = "hashicorp/hcp"
+      version = "0.86.0"
     }
   }
 }
