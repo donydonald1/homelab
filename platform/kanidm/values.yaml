@@ -45,6 +45,8 @@ app-template:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
         nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+        external-dns.alpha.kubernetes.io/target: "homelab-tunnel.techsecoms.com"
+        external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
       hosts:
         - host: &host auth.techsecoms.com
           paths:
